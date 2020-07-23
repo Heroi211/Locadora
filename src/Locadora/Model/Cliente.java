@@ -116,7 +116,7 @@ public class Cliente
     
     public void CadastraCliente(Cliente cliente) throws SQLException,ExceptionDAO
     {
-        new ClienteDAO().CadastraCliente(cliente);
+        new ClienteDAO().CadastraCliente(cliente);//Chamo o método CadastraCliente da classe DAO que efetivamente vai executar a conexão com o banco de dados
     }
     
 }

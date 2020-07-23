@@ -23,8 +23,8 @@ public class ClienteController
         {
             SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
             Date data = formato.parse(Nascimento);
-            Cliente cliente = new Cliente(Nome,CPF,Email,Endereco,Bairro,Cidade,Estado,data);
-            cliente.CadastraCliente(cliente);
+            Cliente cliente = new Cliente(Nome,CPF,Email,Endereco,Bairro,Cidade,Estado,data); //Instancio o model para criar a entidade com os dados preenchidos.
+            cliente.CadastraCliente(cliente); // Chamo o método CadastraCliente da classe model.
             return true;
             
         }
