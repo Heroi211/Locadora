@@ -11,7 +11,7 @@ public class AtorDAO
 {
     public void CadastraAtor(Ator ator) throws ExceptionDAO, SQLException
     {
-        String SQL = "INSERT INTO ATOR VALUES (?,?)";
+        String SQL = "INSERT INTO ATOR (NOME,NACIONALIDADE) VALUES (?,?)";
         PreparedStatement preparedStatement = null;
         Connection connection = null;
         
